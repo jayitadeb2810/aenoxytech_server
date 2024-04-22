@@ -19,7 +19,7 @@ cloudinary.config({
 })
 
 app.get("/", (req, res) =>
-  res.send("Hello Welcome to Render")
+  res.send("Hello Welcome to Aenoxy.com")
 )
 
 app.listen(process.env.PORT, () => {
