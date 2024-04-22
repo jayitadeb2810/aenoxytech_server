@@ -7,7 +7,8 @@ const app = express()
 app.use((req, res, next) => {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "http://localhost:3000"
+    "https://aenoxytech-application.onrender.com"
+    // "http://localhost:3000"
   )
   res.setHeader(
     "Access-Control-Allow-Methods",
