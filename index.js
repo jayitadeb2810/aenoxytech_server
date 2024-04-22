@@ -1,7 +1,7 @@
 import dotenv from "dotenv"
 import cloudinary from "cloudinary"
 import app from "./app.js"
-// import { connectDatabase } from "./config/database.js"
+import { connectDatabase } from "./config/database.js"
 
 dotenv.config()
 
@@ -28,4 +28,4 @@ app.listen(process.env.PORT, () => {
   )
 })
 
-// connectDatabase()
+connectDatabase()
