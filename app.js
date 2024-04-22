@@ -1,7 +1,7 @@
 import express from "express"
 import cookieParser from "cookie-parser"
 import dotenv from "dotenv"
-// import userRoutes from "./routes/User.js"
+import userRoutes from "./routes/User.js"
 const app = express()
 
 app.use((req, res, next) => {
@@ -29,6 +29,6 @@ app.use(express.urlencoded({ extended: false }))
 
 app.use(cookieParser())
 
-// app.use("/api/J3", userRoutes)
+app.use("/api/J3", userRoutes)
 
 export default app

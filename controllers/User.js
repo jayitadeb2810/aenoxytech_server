@@ -1,11 +1,6 @@
 import { sendEmail } from "../middlewares/sendEmail.js"
 import User from "../models/User.js"
-// import { v2 as cloudinary } from "cloudinary"
 import cloudinary from "cloudinary"
-// import { sendEmail } from "../middlewares/sendEmail.js"
-// import crypto from "crypto"
-
-// const baseURL = process.env.SECRET_KEY
 
 export const signUp = (req, res) => {
   const {
